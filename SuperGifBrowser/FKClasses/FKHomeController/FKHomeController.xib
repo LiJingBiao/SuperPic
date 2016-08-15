@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FKHomeController">
+            <connections>
+                <outlet property="generatorButtonHeightC" destination="mNp-xx-Tlb" id="4qf-ZG-KFt"/>
+                <outlet property="loveImageHeightC" destination="7YL-Zc-GMK" id="eDK-1d-WNw"/>
+                <outlet property="photoImageHeightC" destination="MEn-JS-AuH" id="dp1-Qv-Qgh"/>
+                <outlet property="qrCodeButtonHeightC" destination="rQm-CC-L3a" id="d6v-FP-q3d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wifiButtonHeightC" destination="aPX-eJ-F7h" id="hiX-HJ-Zw8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="x39-Wy-LnU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="MEn-JS-AuH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0B9-j2-5iP">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="0.1573585304054054" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="33"/>
+                    <state key="normal" title="My Photo Albums">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="photoButtonAction:" destination="-1" eventType="touchUpInside" id="gRe-jy-O5p"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myLove.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4rr-xH-55l">
+                    <rect key="frame" x="0.0" y="125" width="158" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="7YL-Zc-GMK"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tansuo.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Cr-nv-MdX">
+                    <rect key="frame" x="163" y="125" width="157" height="80"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69I-RB-jMh">
+                    <rect key="frame" x="0.0" y="125" width="158" height="80"/>
+                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="42"/>
+                    <state key="normal" title="Love">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loveButtonAction:" destination="-1" eventType="touchUpInside" id="MZ0-5A-e9U"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFz-wR-PUV">
+                    <rect key="frame" x="163" y="125" width="157" height="80"/>
+                    <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="32"/>
+                    <state key="normal" title="Explore">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="exploreButtonAction:" destination="-1" eventType="touchUpInside" id="XYF-l6-neN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-FA-dxD">
+                    <rect key="frame" x="0.0" y="210" width="158" height="80"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.6470588235294118" blue="0.64313725490196072" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="aPX-eJ-F7h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="Wifi 传输">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="wifiButtonAction:" destination="-1" eventType="touchUpInside" id="hgO-lW-FPu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpS-jz-h4E">
+                    <rect key="frame" x="163" y="210" width="157" height="80"/>
+                    <color key="backgroundColor" red="0.72549019607843135" green="0.85098039215686272" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <state key="normal" title="iTunes文件共享"/>
+                    <connections>
+                        <action selector="itunesButtonAction:" destination="-1" eventType="touchUpInside" id="ZHQ-Fb-Gbo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqa-1m-ESZ">
+                    <rect key="frame" x="0.0" y="295" width="158" height="80"/>
+                    <color key="backgroundColor" red="0.80392156862745101" green="0.83921568627450982" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="rQm-CC-L3a"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="二维码扫描"/>
+                    <connections>
+                        <action selector="qrcodeButtonAction:" destination="-1" eventType="touchUpInside" id="5I0-xj-JHn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxO-2C-XQm">
+                    <rect key="frame" x="163" y="295" width="157" height="80"/>
+                    <color key="backgroundColor" red="0.63137254901960782" green="0.76078431372549016" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <state key="normal" title="缓存图片"/>
+                    <connections>
+                        <action selector="cacheButtonAction:" destination="-1" eventType="touchUpInside" id="FJ2-5x-0BV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgc-jA-NBo">
+                    <rect key="frame" x="0.0" y="380" width="320" height="80"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="mNp-xx-Tlb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                    <state key="normal" title="制作GIF">
+                        <color key="titleColor" red="0.84705882352941175" green="0.76470588235294112" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="creatGifAction:" destination="-1" eventType="touchUpInside" id="da2-KM-l7b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.3606154983108108" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="OpS-jz-h4E" secondAttribute="trailing" id="39z-FF-91r"/>
+                <constraint firstItem="4rr-xH-55l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6ay-b0-aOM"/>
+                <constraint firstItem="bFz-wR-PUV" firstAttribute="top" secondItem="1Cr-nv-MdX" secondAttribute="top" id="6oD-ho-Qc1"/>
+                <constraint firstItem="69I-RB-jMh" firstAttribute="top" secondItem="4rr-xH-55l" secondAttribute="top" id="78Y-8I-y0S"/>
+                <constraint firstItem="0B9-j2-5iP" firstAttribute="height" secondItem="x39-Wy-LnU" secondAttribute="height" id="AXw-xC-WKm"/>
+                <constraint firstAttribute="trailing" secondItem="x39-Wy-LnU" secondAttribute="trailing" id="Aw2-X2-HfQ"/>
+                <constraint firstItem="FdL-FA-dxD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BSs-OC-HfX"/>
+                <constraint firstItem="lgc-jA-NBo" firstAttribute="top" secondItem="DxO-2C-XQm" secondAttribute="bottom" constant="5" id="BfS-rZ-PHR"/>
+                <constraint firstAttribute="trailing" secondItem="lgc-jA-NBo" secondAttribute="trailing" id="DiR-qm-E6d"/>
+                <constraint firstItem="69I-RB-jMh" firstAttribute="leading" secondItem="4rr-xH-55l" secondAttribute="leading" id="Ei1-tA-cEi"/>
+                <constraint firstItem="FdL-FA-dxD" firstAttribute="top" secondItem="69I-RB-jMh" secondAttribute="bottom" constant="5" id="KK9-b9-LAF"/>
+                <constraint firstItem="x39-Wy-LnU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KMi-FA-gVW"/>
+                <constraint firstItem="4rr-xH-55l" firstAttribute="top" secondItem="0B9-j2-5iP" secondAttribute="bottom" constant="5" id="Kmb-F8-7Qc"/>
+                <constraint firstItem="69I-RB-jMh" firstAttribute="width" secondItem="4rr-xH-55l" secondAttribute="width" id="LlZ-tL-Gar"/>
+                <constraint firstItem="DxO-2C-XQm" firstAttribute="width" secondItem="nqa-1m-ESZ" secondAttribute="width" id="MLx-QM-6np"/>
+                <constraint firstItem="0B9-j2-5iP" firstAttribute="width" secondItem="x39-Wy-LnU" secondAttribute="width" id="NiC-Ff-jfy"/>
+                <constraint firstItem="bFz-wR-PUV" firstAttribute="trailing" secondItem="1Cr-nv-MdX" secondAttribute="trailing" id="Qpj-la-coV"/>
+                <constraint firstItem="0B9-j2-5iP" firstAttribute="top" secondItem="x39-Wy-LnU" secondAttribute="top" id="R4m-BD-TKO"/>
+                <constraint firstItem="x39-Wy-LnU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Veb-6U-PN7"/>
+                <constraint firstItem="DxO-2C-XQm" firstAttribute="top" secondItem="OpS-jz-h4E" secondAttribute="bottom" constant="5" id="Vv0-EY-wWZ"/>
+                <constraint firstItem="1Cr-nv-MdX" firstAttribute="top" secondItem="0B9-j2-5iP" secondAttribute="bottom" constant="5" id="YLL-5Z-4lD"/>
+                <constraint firstItem="DxO-2C-XQm" firstAttribute="leading" secondItem="nqa-1m-ESZ" secondAttribute="trailing" constant="5" id="bXB-te-rQy"/>
+                <constraint firstAttribute="trailing" secondItem="DxO-2C-XQm" secondAttribute="trailing" id="c9U-24-0Z5"/>
+                <constraint firstItem="DxO-2C-XQm" firstAttribute="height" secondItem="nqa-1m-ESZ" secondAttribute="height" id="d7w-Vr-6dH"/>
+                <constraint firstItem="bFz-wR-PUV" firstAttribute="width" secondItem="1Cr-nv-MdX" secondAttribute="width" id="ds1-av-fqo"/>
+                <constraint firstItem="1Cr-nv-MdX" firstAttribute="height" secondItem="4rr-xH-55l" secondAttribute="height" id="eIv-yu-Jou"/>
+                <constraint firstItem="1Cr-nv-MdX" firstAttribute="leading" secondItem="4rr-xH-55l" secondAttribute="trailing" constant="5" id="fMh-bs-VNZ"/>
+                <constraint firstItem="lgc-jA-NBo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fdV-du-iPb"/>
+                <constraint firstItem="bFz-wR-PUV" firstAttribute="height" secondItem="1Cr-nv-MdX" secondAttribute="height" id="fqz-Dc-gFl"/>
+                <constraint firstItem="0B9-j2-5iP" firstAttribute="leading" secondItem="x39-Wy-LnU" secondAttribute="leading" id="gx3-BX-A01"/>
+                <constraint firstItem="OpS-jz-h4E" firstAttribute="top" secondItem="bFz-wR-PUV" secondAttribute="bottom" constant="5" id="hCR-Sm-Dsu"/>
+                <constraint firstItem="1Cr-nv-MdX" firstAttribute="width" secondItem="4rr-xH-55l" secondAttribute="width" id="i65-uW-1zq"/>
+                <constraint firstItem="OpS-jz-h4E" firstAttribute="height" secondItem="FdL-FA-dxD" secondAttribute="height" id="nds-cg-uv0"/>
+                <constraint firstItem="69I-RB-jMh" firstAttribute="height" secondItem="4rr-xH-55l" secondAttribute="height" id="qvD-IJ-Gff"/>
+                <constraint firstItem="nqa-1m-ESZ" firstAttribute="top" secondItem="FdL-FA-dxD" secondAttribute="bottom" constant="5" id="r4a-FG-pLG"/>
+                <constraint firstItem="OpS-jz-h4E" firstAttribute="leading" secondItem="FdL-FA-dxD" secondAttribute="trailing" constant="5" id="sEb-rD-cf3"/>
+                <constraint firstAttribute="trailing" secondItem="1Cr-nv-MdX" secondAttribute="trailing" id="tVh-rX-J4t"/>
+                <constraint firstItem="OpS-jz-h4E" firstAttribute="width" secondItem="FdL-FA-dxD" secondAttribute="width" id="xXD-4v-vvp"/>
+                <constraint firstItem="nqa-1m-ESZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yo7-Hf-csa"/>
+            </constraints>
+            <point key="canvasLocation" x="448" y="433"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="myLove.jpg" width="300" height="200"/>
+        <image name="photo.jpg" width="947" height="544"/>
+        <image name="tansuo.png" width="1008" height="633"/>
+    </resources>
+</document>

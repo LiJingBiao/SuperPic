@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LeftViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr1-Q7-1yB">
+                    <rect key="frame" x="0.0" y="40" width="600" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="9tB-sX-YRG"/>
+                    </constraints>
+                    <state key="normal" title="    相册图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="defaultShowVC:" destination="-1" eventType="touchUpInside" id="0YH-sq-g82"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sy0-Pd-h6O">
+                    <rect key="frame" x="0.0" y="117" width="600" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="iqV-pz-loO"/>
+                    </constraints>
+                    <state key="normal" title="    WIFI导入图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showHttpVC:" destination="-1" eventType="touchUpInside" id="dPb-eo-V9g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctw-XW-JSo">
+                    <rect key="frame" x="0.0" y="194" width="600" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="zfh-V1-evZ"/>
+                    </constraints>
+                    <state key="normal" title="    本地图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showLocalPhoto:" destination="-1" eventType="touchUpInside" id="fpK-Ea-D6r"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CL3-k1-OhM">
+                    <rect key="frame" x="0.0" y="273" width="600" height="44"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="rel-Qn-3Nj"/>
+                    </constraints>
+                    <state key="normal" title="    获取网页图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showWebViewController:" destination="-1" eventType="touchUpInside" id="gSo-tc-I2H"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dr1-Q7-1yB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3jN-Pm-uGk"/>
+                <constraint firstItem="dr1-Q7-1yB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="40" id="Cir-vA-hmW"/>
+                <constraint firstItem="Sy0-Pd-h6O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HEP-zE-YLn"/>
+                <constraint firstAttribute="trailing" secondItem="CL3-k1-OhM" secondAttribute="trailing" id="L8U-sP-Stm"/>
+                <constraint firstAttribute="trailing" secondItem="Sy0-Pd-h6O" secondAttribute="trailing" id="Lc4-g0-nzX"/>
+                <constraint firstItem="ctw-XW-JSo" firstAttribute="top" secondItem="Sy0-Pd-h6O" secondAttribute="bottom" constant="33" id="LzE-f5-15D"/>
+                <constraint firstItem="ctw-XW-JSo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Nzb-vz-fPz"/>
+                <constraint firstItem="Sy0-Pd-h6O" firstAttribute="top" secondItem="dr1-Q7-1yB" secondAttribute="bottom" constant="33" id="RNV-fl-UIz"/>
+                <constraint firstItem="CL3-k1-OhM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UKK-HD-ObG"/>
+                <constraint firstAttribute="trailing" secondItem="dr1-Q7-1yB" secondAttribute="trailing" id="mq9-6b-tRe"/>
+                <constraint firstAttribute="trailing" secondItem="ctw-XW-JSo" secondAttribute="trailing" id="nGH-au-rOC"/>
+                <constraint firstItem="CL3-k1-OhM" firstAttribute="top" secondItem="ctw-XW-JSo" secondAttribute="bottom" constant="35" id="z2z-bq-q1l"/>
+            </constraints>
+            <point key="canvasLocation" x="521" y="301"/>
+        </view>
+    </objects>
+</document>

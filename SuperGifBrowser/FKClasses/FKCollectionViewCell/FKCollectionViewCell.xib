@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FKCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="102"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZqC-ig-t2X" customClass="YYAnimatedImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="102"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HTv-b0-41z">
+                        <rect key="frame" x="0.0" y="0.0" width="116" height="102"/>
+                        <state key="normal" image="fx_report_option_nor.png"/>
+                        <state key="selected" image="fx_report_option_sel.png"/>
+                        <connections>
+                            <action selector="selectedButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="8jM-R4-y4s"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="HTv-b0-41z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="4Ub-Qa-WO9"/>
+                <constraint firstAttribute="bottom" secondItem="HTv-b0-41z" secondAttribute="bottom" id="9WB-xQ-Oqf"/>
+                <constraint firstAttribute="bottom" secondItem="ZqC-ig-t2X" secondAttribute="bottom" id="BOp-o0-QJl"/>
+                <constraint firstAttribute="trailing" secondItem="HTv-b0-41z" secondAttribute="trailing" id="CD2-7k-RfC"/>
+                <constraint firstItem="HTv-b0-41z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Oho-cl-gAn"/>
+                <constraint firstAttribute="trailing" secondItem="ZqC-ig-t2X" secondAttribute="trailing" id="WCz-aJ-Fii"/>
+                <constraint firstItem="ZqC-ig-t2X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZmA-OY-21e"/>
+                <constraint firstItem="ZqC-ig-t2X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xWA-UH-Zwn"/>
+            </constraints>
+            <size key="customSize" width="116" height="102"/>
+            <connections>
+                <outlet property="photoImageView" destination="ZqC-ig-t2X" id="UaT-Ik-4hA"/>
+                <outlet property="selectedButton" destination="HTv-b0-41z" id="p25-8t-pt4"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="329"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fx_report_option_nor.png" width="118" height="118"/>
+        <image name="fx_report_option_sel.png" width="118" height="118"/>
+    </resources>
+</document>
